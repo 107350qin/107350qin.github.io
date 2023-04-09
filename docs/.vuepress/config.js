@@ -1,7 +1,6 @@
 module.exports = {
   title: 'Java帮帮忙',
   description: '搜罗Java开发中常用的工具',
-  base: "/java-asker/",
   head: [
     ['link', { rel: 'icon', href: `../hero.png` }]
   ],
