@@ -23,4 +23,4 @@ jobs:
         with:
           token: ${{ secrets.VUEPRESS_SECRET }}
           branch: gh-pages
-          folder: docs/.vuepress/dist
+          folder: docs/.vuepress/dist/
