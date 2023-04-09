@@ -10,7 +10,6 @@ module.exports = {
       { text: '主页', link: '/' },
       { text: '指南', link: '/guide/' },
       { text: '黑科技', link: '/black/' },
-      { text: 'GitHub', link: 'https://github.com' },
     ],
     sidebar: {
       // 侧边栏在 /guide/ 上
@@ -31,7 +30,7 @@ module.exports = {
     },
 
     // 假定 GitHub。也可以是一个完整的 GitLab 网址
-    repo: 'https://gitee.com/qinmengqinmeng/vuepress-asker',
+    repo: 'https://github.com/107350qin/107350qin.github.io',
     // 如果你的文档不在仓库的根部
     docsDir: 'docs',
     // 可选，默认为 master

@@ -1,8 +1,8 @@
 # 使用vuepress+github搭建静态网站
 
-## [vuepress项目开发](http://caibaojian.com/vuepress/)
+## vuepress项目开发
 
-这里参照官网一步步做就行，我这里关键记录一下部署过程。
+这里参照[官网](http://caibaojian.com/vuepress/)一步步做就行，我这里关键记录一下部署过程。
 
 ## 项目部署
 
@@ -53,7 +53,7 @@ jobs:
 - token怎么获取？
   - github>setting>Developer settings>Personal access tokens>Tokens(classis)新建一个token，我这里就写一个叫做VUEPRESS_TOKEN，生成的token字符串自己保存一下哈，下一步要用。
   - 仓库>Settings>Security>Secrets and variables>Actions>New repository secrets，我这里就写一个叫做VUEPRESS_SECRETS，对应的值写上面获得的token字符串。
-  - 于是乎，脚本文件中的token就可以写上`token: ${{ secrets.VUEPRESS_SECRET }}`
+  - 于是乎，脚本文件中的token就可以写上`secrets.VUEPRESS_SECRET`
 
 ### 部署
 
@@ -64,3 +64,4 @@ jobs:
 - 部署之后如果发现页面错乱，可能是config.js里配置的base不正确，把它去掉试试。
 - 当部署失败时，尝试使用仓库下的 Actions 进行手动部署，这样可以看到日志，以便排查错误
   - 如果看到deploy阶段Permisson之类的问题，可能是你的TOKEN配置的权限不够！
+  - md文档编辑是不要用大括号，否则可能会编译失败。
