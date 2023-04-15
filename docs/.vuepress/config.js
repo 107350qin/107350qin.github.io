@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Java帮帮忙',
-  description: '搜罗Java开发中常用的工具',
+  title: 'Code Design',
+  description: '代码设计',
   head: [
     ['link', { rel: 'icon', href: `../hero.png` }]
   ],
