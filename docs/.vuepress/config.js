@@ -37,5 +37,14 @@ module.exports = {
     docsBranch: 'master',
     // 默认为 true，设置为 false 来禁用
     editLinks: true
-  }
+  },
+  plugins: [
+    [
+      'vuepress-plugin-code-copy',{
+        color: "#ffffff",
+        backgroundTransition: false,
+        successText: "copy success"
+      }
+    ],
+  ]
 }
