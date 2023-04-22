@@ -10,6 +10,8 @@
     "doc": "docs"
   },
   "dependencies": {
+    "@vssue/api-github-v3": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.8",
     "abbrev": "^1.1.1",
     "accepts": "^1.3.8",
     "acorn": "^6.4.2",

@@ -36,15 +36,16 @@ module.exports = {
     // 可选，默认为 master
     docsBranch: 'master',
     // 默认为 true，设置为 false 来禁用
-    editLinks: true
+    editLinks: true,
   },
-  plugins: [
-    [
-      'vuepress-plugin-code-copy',{
-        color: "#ffffff",
-        backgroundTransition: false,
-        successText: "copy success"
-      }
-    ],
-  ]
+  plugins: 
+    {
+      '@vssue/vuepress-plugin-vssue': {
+        platform: 'github',
+        owner: '107350qin',
+        repo: '107350qin.github.io',
+        clientId: 'ac93c1b414bc065602c5',
+        clientSecret: '7b9e1e05355d59d58e8de2da0a4032f744dd8bdf',
+      },
+    },
 }

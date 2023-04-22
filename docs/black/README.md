@@ -18,7 +18,7 @@
 
 在仓库下新建文件 `.github/workflows/gh-pages.yml`，内容如下：
 
-```shell
+```js
 name: Deploy to GitHub Pages
 
 on:
@@ -65,3 +65,6 @@ jobs:
 - 当部署失败时，尝试使用仓库下的 Actions 进行手动部署，这样可以看到日志，以便排查错误
   - 如果看到deploy阶段Permisson之类的问题，可能是你的TOKEN配置的权限不够！
   - md文档编辑是不要用大括号，否则可能会编译失败。
+
+
+<Vssue :title="$title" />
