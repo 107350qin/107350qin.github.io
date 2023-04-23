@@ -46,6 +46,8 @@ module.exports = {
         repo: '107350qin.github.io',
         clientId: 'ac93c1b414bc065602c5',
         clientSecret: '7b9e1e05355d59d58e8de2da0a4032f744dd8bdf',
+        locale: 'zh-CN'
       },
+      'vuepress-plugin-code-copy':{}
     },
 }
